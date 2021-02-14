@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temps du passé</title>
+<link rel="stylesheet" href="https://drive.google.com/uc?id=1bnCGySsxwIWrMAL8_lcOWrjtYkunkYfF&export=download" />
+
+<style>
+    #myBtn {
+  /*display: none;*/
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #a13b41;
+  color: white;
+  cursor: pointer;
+  opacity: 0.5;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  padding: 15px;
+  border-radius: 10px;
+  transition: 500ms;
+  font-family: Montserrat;
+}
+
+#myBtn:hover {
+  background-color: rgb(109, 64, 151);
+}
+
+</style>
+</head>
+
+<body>
+
+	<div class="toolbar">
+		<p class="toolbar-text">صيغ وأزمنة اللغة الفرنسية المستوى الأول</p>
+	</div>
+
+  <button onclick="goToTop()" id="myBtn" title="Go to top">Retour</button>
+
+
+
+	<div class="backdrop">
+
+    <div class="card">
+
+      <h1 class="card-header">Modes et temps</h1>
+      
+       <div class="option" onclick="selectAndGo('#2')">
+        Le verbe الفعل
+       </div>
+       
+        <div class="option" onclick="selectAndGo('#3')">
+          Voix Active et Voix Passive
+       </div>
+      
+      
+       <div class="option" onclick="selectAndGo('#4')">
+        Les verbes pronominaux الأفعال الضميرية
+       </div>
+       <div class="option" onclick="selectAndGo('#5')">
+        Les verbes impersonnels الأفعال غير الشخصية
+       </div>
+       <div class="option" onclick="selectAndGo('#6')">
+        Conjugaison des verbes تصريف الأفعال
+       </div>
+       <div class="option" onclick="selectAndGo('#7')">
+        Les trois groupe du verbes
+       </div>
+       <div class="option" onclick="selectAndGo('#8')">
+        Le présent de l’indicatif 
+       </div>
+       <div class="option" onclick="selectAndGo('#9')">
+        L’imparfait الماضى الناقص  
+       </div>
+       <div class="option" onclick="selectAndGo('#10')">
+        Le passé simple  الماضى البسيط  
+       </div>
+       <div class="option" onclick="selectAndGo('#12')">
+        Le futur simple المستقبل البسيط  
+       </div>
+       <div class="option" onclick="selectAndGo('#14')">
+        Le passé composé الماضي المركب  
+       </div>
+       <div class="option" onclick="selectAndGo('#16')">
+        Passé composé et imparfait   
+       </div>
+       <div class="option" onclick="selectAndGo('#17')">
+        Le plus-que-parfait  الماضى التام  
+       </div>
+       <div class="option" onclick="selectAndGo('#18')">
+        Le passé Antérieur  الماضى الأسبق   
+       </div>
+       <div class="option" onclick="selectAndGo('#19')">
+        Le futur Antérieur  المستقبل الأسبق  
+       </div>
+       <div class="option" onclick="selectAndGo('#20')">
+        Conditionnel Présent  مضارع الشرطى  
+       </div>
+       <div class="option" onclick="selectAndGo('#22')">
+        Le conditionnel passé  ماضى الشرط  
+       </div>
+       <div class="option" onclick="selectAndGo('#24')">
+        Si conditionnel إذا الشرطية  
+       </div>
+       <div class="option" onclick="selectAndGo('#25')">
+        Le subjonctif présent مضارع الشك  
+       </div>
+       <div class="option" onclick="selectAndGo('#27')">
+        Subjectif passé ماضى الشك  
+       </div>
+       <div class="option" onclick="selectAndGo('#30')">
+        Concordance des temps du subjectif   
+       </div>
+       <div class="option" onclick="selectAndGo('#31')">
+        Présent de l’Imparfait  مضارع الأمر  
+       </div>
+       <div class="option" onclick="selectAndGo('#33')">
+        Mode Infinitif  مضارع المصدر  
+       </div>
+       <div class="option" onclick="selectAndGo('#34')">
+        L’infinitif passé  ماضى المصدر  
+       </div>
+       <div class="option" onclick="selectAndGo('#36')">
+        Le participe passé simple اسم المفعول البسيط   
+       </div>
+       <div class="option" onclick="selectAndGo('#37')">
+        Le participe passé composé  اسم المفعول المركب  
+       </div>
+       <div class="option" onclick="selectAndGo('#38')">
+        Accord du participe passé  مطابقة اسم المفعول  
+       </div>
+       <div class="option" onclick="selectAndGo('#40')">
+        Le Participe Présent  اسم الفاعل  
+       </div>
+       <div class="option" onclick="selectAndGo('#41')">
+        L’adjectif Verbal الصفة الفعلية   
+       </div>
+       
+        
+      </div>
+
+      <img class="img-group-start" src="assets/2.svg" id="1" />
+      <img class="img-group-item" src="assets/3.svg" id="2" />
+      <img class="img-group-item" src="assets/4.svg" id="3" />
+      <img class="img-group-item" src="assets/5.svg" id="4" />
+      <img class="img-group-item" src="assets/6.svg" id="5" />
+      <img class="img-group-item" src="assets/7.svg" id="6" />
+      <img class="img-group-item" src="assets/8.svg" id="7" />
+      <img class="img-group-item" src="assets/9.svg" id="8" />
+      <img class="img-group-item" src="assets/10.svg" id="9" />
+      <img class="img-group-item" src="assets/11.svg" id="10" />
+      <img class="img-group-item" src="assets/12.svg" id="11" />
+      <img class="img-group-item" src="assets/13.svg" id="12" />
+      <img class="img-group-item" src="assets/14.svg" id="13" />
+      <img class="img-group-item" src="assets/15.svg" id="14" />
+      <img class="img-group-item" src="assets/16.svg" id="15" />    
+      <img class="img-group-item" src="assets/17.svg" id="16" />
+      <img class="img-group-item" src="assets/18.svg" id="17" />
+      <img class="img-group-item" src="assets/19.svg" id="18" />
+      <img class="img-group-item" src="assets/20.svg" id="19" />
+      <img class="img-group-item" src="assets/21.svg" id="20" />
+      <img class="img-group-item" src="assets/22.svg" id="21" />
+      <img class="img-group-item" src="assets/23.svg" id="22" />
+      <img class="img-group-item" src="assets/24.svg" id="23" />
+      <img class="img-group-item" src="assets/25.svg" id="24" />
+      <img class="img-group-item" src="assets/26.svg" id="25" />
+      <img class="img-group-item" src="assets/27.svg" id="26" />
+      <img class="img-group-item" src="assets/28.svg" id="27" />
+      <img class="img-group-item" src="assets/29.svg" id="28" />
+      <img class="img-group-item" src="assets/30.svg" id="29" />
+      <img class="img-group-item" src="assets/31.svg" id="30" />
+      <img class="img-group-item" src="assets/32.svg" id="31" />
+      <img class="img-group-item" src="assets/33.svg" id="32" />
+      <img class="img-group-item" src="assets/34.svg" id="33" />
+      <img class="img-group-item" src="assets/35.svg" id="34" />
+      <img class="img-group-item" src="assets/36.svg" id="35" />    
+      <img class="img-group-item" src="assets/37.svg" id="36" />
+      <img class="img-group-item" src="assets/38.svg" id="37" />
+      <img class="img-group-item" src="assets/39.svg" id="38" />
+      <img class="img-group-item" src="assets/40.svg" id="39" />    
+      <img class="img-group-item" src="assets/41.svg" id="40" />    
+      <img class="img-group-end" src="assets/42.svg" id="41" />
+
+        
+</div>
+
+<script>
+  function selectAndGo(urlString) {
+  window.location.href=urlString;
+}
+function goToTop() {
+	document.querySelector('.backdrop').scrollTop = 0;
+}
+</script>
+
+</body>
+
+</html>
